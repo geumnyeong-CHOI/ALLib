@@ -1,0 +1,70 @@
+관리자 jsp header, footer
+
+<link rel="stylesheet" type="text/css" href="./css/admin_header_footer_font.css">
+※ css링크는 반드시 헤드에 추가된 부트스트랩 뒤에 넣어야 폰트 적용됩니다 ※
+
+▶
+<body>
+<div id="wrapper">
+<header>	</
+
+body안에 위치한 header, section 을
+id="wrapper"인 div로 감싸야 footer 아래에 고정됨
+
+</div>	wrappder div 닫는 태그
+<footer></
+</body>
+
+
+▶ body > div(id wrapper) > header 추가
+<header>
+	<nav class="navbar navbar-expand-sm ">
+	  <a class="navbar-brand" href="./MainAdmin.jsp">Home</a>
+	  <ul class="navbar-nav">
+	    <li class="nav-item dropdown" id="bookAdmin">
+	      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+	        도서관리
+	      </a>
+	      <div class="dropdown-menu">
+	        <a class="dropdown-item" href="./BookMListAction.book">전체목록</a>
+	        <a class="dropdown-item" href="./book_m_insert.jsp">도서등록</a>
+	      </div>
+	    </li>
+		<li class="nav-item dropdown" id="seatAdmin">
+	      <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+	        좌석관리
+	      </a>
+	      <div class="dropdown-menu">
+	        <a class="dropdown-item" href="./SeatAdminChkAction.me">좌석현황</a>      </div>
+	    </li>
+	    <li class="nav-item dropdown" id="userAdmin">
+	      <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+	        회원관리
+	      </a>
+	      <div class="dropdown-menu">
+	        <a class="dropdown-item" href="./userListAction.us">회원 목록</a>
+	      </div>
+	    </li>
+	    <li class="nav-item dropdown" id="qnaAdmin">
+	      <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+	        Q&A관리
+	      </a>
+	      <div class="dropdown-menu">
+	        <a class="dropdown-item" href="./qnaList.qna">Q&A 목록</a>
+	      </div>
+	    </li>        
+	  </ul>
+	  <button type="button" class="btn navbtn" id="navbtn" style="float: right;" onclick="javascript:location.href='./userLogout.us'">로그아웃
+	  </button>
+	</nav>
+</header>
+
+
+▶ 닫는 body태그 위에 footer 추가(기존 footer와 동일함)
+<footer>
+        <nav>
+            <span>Project ALLib</span><br>
+            <span>copyright ⓒ2023 Himedia Academy, All Rights Reserved.</span><br>
+            <span>삶은 계란<span class="slash">&nbsp;|&nbsp;</span>정하늘 홍기락 최영호 유미애 김주형 임금준 류동현 박경진 최금녕</span>
+        </nav>
+</footer>

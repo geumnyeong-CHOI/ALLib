@@ -1,0 +1,72 @@
+@charset "UTF-8";
+	/* 폰트 */
+	@font-face { font-family: 'nunito'; src : url('../font/Nunito-VariableFont_wght.ttf'); unicode-range: U+0041-005A, U+0061-007A;}
+	@font-face { font-family: 'notosans'; src: url('../font/NotoSansKR-VariableFont_wght.ttf'); }
+	@font-face { font-family: 'notoserif'; src : url('../font/NotoSerifKR-Medium.otf'); } 
+		
+
+	/* 전체 */
+	html, body {
+    	height: 100%;
+    	width: 100%;
+	}
+	
+	body{	
+		font-family: 'nunito', 'notosans', 'notoserif';
+	}
+		
+	* {
+		box-sizing: border-box;
+	}
+	
+	/* navbar */
+	nav.navbar {
+		background-color: #6A5ACD; 
+		color:white;
+	}
+	
+	nav li a, a.navbar-brand{
+		color: white;
+		margin: 0 10px;
+	}
+	
+	.dropdown-item{
+		width: 90%;
+	}
+
+	nav li a:hover, a.navbar-brand:hover{
+		font-weight: bold;
+		color: white;
+		cursor: pointer;
+	}
+	
+	.navbtn {
+		background-color:white;
+	}
+	
+	button.btn{
+		color: black;
+	}
+	
+	nav > button.btn:hover {
+		color: black !important;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	
+	/* footer */
+	footer {
+			width: 100%;
+			background-color: #e3e3e3;
+			padding: 10px ;
+			text-align: center;
+			font-size:12px;
+			height: 100px;
+	}
+	
+	#wrapper{
+		min-height: calc(100vh - 100px); 
+	}
+	
+	
+	

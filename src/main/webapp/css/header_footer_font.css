@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@font-face { font-family: 'nunito'; src : url('../font/Nunito-VariableFont_wght.ttf'); unicode-range: U+0041-005A, U+0061-007A;}
+@font-face { font-family: 'notosans'; src: url('../font/NotoSansKR-VariableFont_wght.ttf'); }
+@font-face { font-family: 'notoserif'; src : url('../font/NotoSerifKR-Medium.otf'); } 
+
+@media screen and (min-width: 1024px) and (orientation: landscape) { html , body{margin:0px; padding:0px;} }
+
+/* 전체 */
+
+html , body{ width: 100%; height: 100%; }
+
+body {font-family: 'nunito', 'notosans', 'notoserif';}
+
+* { box-sizing:border-box; }
+
+/* navbar a태그 */
+a.nava{	color: white; padding: 0;}
+a.nava:hover{color: white; text-decoration: none;}
+
+/* header */
+.headernav{	height: 30px; background-color: #6A5ACD; padding: 0 10px !important; }
+.nava{padding: 0 10px !important;}
+a.nava:hover{text-decoration: none;}
+
+/* section */
+
+	/* section navbar(logo)*/
+	
+	.sectionnav{display:inline-block;}
+	nav a.sectionnavA{margin: 0 auto;}
+	#logo {max-width: 40px;	margin-bottom: 0;}
+	span.secNavTitle{color: #303030; padding-left: 10px; font-size: 1.5rem; vertical-align: middle; }
+	.sectionNavDiv{text-align:center; background-color: white;}
+
+/* carousel 이미지 크기 */
+	.carousel-inner img {width:100%; height:250px;}
+
+/* section div*/
+	.sectiondiv{height:auto; min-height: 100%; padding-bottom: 100px; background-color: #f3f3f3;}
